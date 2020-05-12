@@ -1,0 +1,15 @@
+<h2>User List</h2>
+<ul>
+  <li *ngFor="let user of userList" >
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src={{user.imageUrl}} alt={{user.imageUrl}}>
+      <div class="card-body">
+        <h5 class="card-title">{{user.firstName | uppercase}} {{user.lastName | uppercase}}</h5>
+        <p class="card-text">{{user.email | lowercase}}</p>
+        <p class="card-text">{{user.dob | date:"dd-MMM-yyyy" }}</p>
+
+        <button type="button" class="btn btn-primary" (click)="getDetails(user)">More Info...</button>
+      </div>
+    </div>
+  </li>
+</ul>
