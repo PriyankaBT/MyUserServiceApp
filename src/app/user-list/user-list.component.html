@@ -7,7 +7,7 @@
         <h5 class="card-title">{{user.firstName | uppercase}} {{user.lastName | uppercase}}</h5>
         <p class="card-text">{{user.email | lowercase}}</p>
         <p class="card-text">{{user.dob | date:"dd-MMM-yyyy" }}</p>
-
+        <p class="card-text">{{user.profession | titlecase }}</p>
         <button type="button" class="btn btn-primary" (click)="getDetails(user)">More Info...</button>
       </div>
     </div>
