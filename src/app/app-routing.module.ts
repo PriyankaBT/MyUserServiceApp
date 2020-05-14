@@ -6,6 +6,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { NotFoundComponent } from './not-found/not-found.component'
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'user-list', component: UserListComponent },

@@ -10,7 +10,7 @@ export class AppComponent {
   //title = 'MyBasicApp';
 
   public constructor(private titleService: Title ) {
-      titleService.setTitle('Testing')
+      titleService.setTitle('My User Service App')
   }
 }
 

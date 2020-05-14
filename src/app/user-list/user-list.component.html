@@ -1,8 +1,8 @@
 <h2>User List</h2>
 <ul>
   <li *ngFor="let user of userList" >
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src={{user.imageUrl}} alt={{user.imageUrl}}>
+    <div class="card" style="width: 12rem;">
+      <img class="card-img-top" src={{user.imageUrl}} alt={{user.imageUrl}} width="100" height="100">
       <div class="card-body">
         <h5 class="card-title">{{user.firstName | uppercase}} {{user.lastName | uppercase}}</h5>
         <p class="card-text">{{user.email | lowercase}}</p>
